@@ -1,0 +1,97 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #222;
+  font-family: helvetica, arial, freesans, clean, sans-serif;
+}
+
+.patch {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.patch:last-child {
+  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-radius-bottomleft: 10px;
+  -webkit-border-radius-bottomright: 10px;
+}
+
+.patch:first-child {
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-radius-topleft: 10px;
+  -webkit-border-radius-topright: 10px;
+}
+
+.acceptedBy {
+  font-weight: bold;
+  color: darkgreen;
+}
+
+.accepted {
+  background-color: #CFC;
+}
+
+.notAccepted {
+  background-color: #ebff7f;
+}
+
+.acceptLink {
+  display: inline-block;
+  width: 5em;
+  text-align: right;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#nameBox {
+  background: #CCFFCC;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  border: 1px solid black;
+  border-bottom: 0; border-right: 0;
+  padding: 5px 10px;
+  -moz-border-radius: 10px 0 0 0;
+  -webkit-border-radius: 10px 0 0 0;
+}
+
+#name {
+  width: 100px;
+  border: 1px solid black;
+}
+
+.diff {
+  margin-left: 30px;
+  margin-top: 10px;
+  padding: 15px;
+  font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  font-size: 90%;
+  white-space: pre;
+  border: 1px solid #DDDDDD;
+  background-color: #fefefe;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.diff .path {
+  font-weight: bold;
+}
+
+.diff .addition {
+  color: #005b04;
+}
+
+.diff .remove {
+  color: #8d0d00;
+}
+
+.diff span {
+  display: block;
+  clear: both;
+}

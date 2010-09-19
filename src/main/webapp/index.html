@@ -1,0 +1,28 @@
+<lift:surround with="default" at="content">
+  <head>
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jquery.jqote2.min.js"></script>
+    <script type="text/javascript" src="js/review.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/review.css"/>
+    <script type="text/html" id="rowTemplate">
+      <![CDATA[
+      <div class="patch" id="patch<%= this.id %>">
+        <a class="acceptLink" href="#">Approve</a>
+        <span class="subject">
+          <%= this.subject %>
+        </span>
+        <span class="acceptedBy">accepted by no one</span>
+        <div class="diff" style="display:none"><%= this.diff %></div>
+      </div>
+      ]]>
+    </script>
+    <title>Review</title>
+  </head>
+  <div id="nameBox">
+    <label for="name">My name is </label>
+    <input type="text" name="name" id="name" class="nameInput" />
+  </div>
+  <div id="patches"></div>
+  <lift:comet type="PatchComet"/>
+</lift:surround>
